@@ -28,6 +28,10 @@ class CleanerAgent extends Agent {
         };
     }
 
+    setup(){
+        //Simplemente cambiamos la orden para este dato específico
+        this.table['0,0,1,1,0'] = 'UP';
+    }
     /**
      * We override the send method. 
      * In this case, the state is just obtained as the join of the perceptions
